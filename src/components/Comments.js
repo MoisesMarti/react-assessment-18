@@ -5,8 +5,8 @@ const Comments = ({comments}) => {
     }
     
     return comments.map((current) => (
-      <h1 key={current.id} onClick={() => handleClick(current.id)}>
-        {current.body}</h1>
+      <p key={current.id} onClick={() => handleClick(current.id)}>
+        {current.body}</p>
     ));
   }
   
